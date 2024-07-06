@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" 
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+    <h:head>
+        <title>Dashboard Page</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />     
+    </h:head>
+    <h:body>
+        <ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                        xmlns:h="http://xmlns.jcp.org/jsf/html"
+                        xmlns:ui="http://java.sun.com/jsf/facelets"
+                        template="/panel/template/adminnavbar.xhtml">
+            <ui:define name="content">
+                <h:outputStylesheet library="css" name="dashboard.css" />
+                <div class="container">
+                    <ui:include src="/panel/template/dashboardsidebar.xhtml"></ui:include>
+                    <main class="main-content">
+                        <div class="content">
+                            <h1>Welcome to Dashboard</h1>
+                            <p>This is the main content area of your dashboard.</p>
+                        </div>
+                    </main>
+
+                </div>
+                <footer class="footer">
+                    <p>&copy; 2024 Admin Panel</p>
+                </footer>
+            </ui:define>
+        </ui:composition>
+        <h:outputScript library="js" name="dashboard.js" />
+    </h:body>
+</html>

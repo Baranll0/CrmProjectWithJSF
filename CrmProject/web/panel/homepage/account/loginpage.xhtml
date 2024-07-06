@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" 
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+    <head>
+        <title>Login Page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        
+    </head>
+    <body>
+        <ui:composition template="/panel/template/mainTemplate.xhtml">
+            <ui:define name="content">
+                <h:outputStylesheet library="css" name="customer/registerpage.css" />
+                <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+                <div class="container mt-5">
+                    <h1 class="text-center">Login</h1>
+                    <div class="row mt-4">
+                        <div class="col-md-6">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Employee</h5>
+                                    <p class="card-text">Login as a Employee</p>
+                                    <a href="employeeLogin.xhtml" class="btn btn-primary">Login</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Customer</h5>
+                                    <p class="card-text">Login as a Customer</p>
+                                    <a href="customerLogin.xhtml" class="btn btn-primary">Login</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-center mt-4">Haven't registered yet? <a href="registerpage.xhtml">Register here</a></p>
+                </div>
+                <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+            </ui:define>
+        </ui:composition>
+        
+    </body>
+</html>

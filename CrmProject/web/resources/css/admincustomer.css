@@ -1,0 +1,160 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Sidebar styles */
+.sidebar {
+    width: 25%;
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px;
+}
+
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar-menu li {
+    margin-bottom: 10px;
+}
+
+.sidebar-menu a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.sidebar-menu a:hover,
+.sidebar-menu li.active a {
+    background-color: #495057;
+}
+
+/* Content container */
+.admin-customers-container {
+    flex-grow: 1;
+    background-color: #fff;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.admin-customers-header {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.admin-customers-header h1 {
+    font-size: 24px;
+}
+
+/* Button styles */
+.button-container {
+    margin: 20px 0;
+}
+
+.button-container button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.button-container button:hover {
+    background-color: #3e8e41;
+}
+
+/* Footer styles */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Form and table styles */
+#companyCustomerForm {
+    margin-bottom: 20px;
+}
+
+h:panelGrid {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+h:inputText, h:outputText {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+h:commandButton {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin: 4px 2px;
+}
+
+h:commandButton:hover {
+    background-color: #45a049;
+}
+
+h:dataTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+h:dataTable, h:column {
+    border: 1px solid #ddd;
+}
+
+h:dataTable h:column {
+    padding: 12px;
+}
+
+h:dataTable h:column:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+f:facet {
+    font-weight: bold;
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px;
+}
+
+h:dataTable h:outputText {
+    display: block;
+    padding: 8px;
+}
